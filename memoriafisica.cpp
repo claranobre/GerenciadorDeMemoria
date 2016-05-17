@@ -61,7 +61,7 @@ int main () {
             char tam[10];
 
             push_back(temp->getEndereco().c_str());
-            itoa(temp->getTamanho(),tam,10); // pega o tamanho e jogar em 'tam'
+            itoa(temp->getTamanho(),tam,10); // joga o valor de tamanho em 'tam'
             push_back(tam);
 
             int tamanho = temp->getTamanho();
