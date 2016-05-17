@@ -1,11 +1,11 @@
-#ifndef MEMORIA_H
-#define MEMORIA_H
+#ifndef MEMORIA_VIRTUAL_H
+#define MEMORIA_VIRTUAL_H
 
 
-class Memoria
+class memoriaVirtual
 {
 public:
-    Memoria();
+    memoriaVirtual();
 };
 
-#endif // MEMORIA_H
+#endif // MEMORIA_VIRTUAL_H
