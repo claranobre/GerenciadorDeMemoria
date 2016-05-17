@@ -8,21 +8,22 @@ CONFIG -= app_bundle
 TEMPLATE = app
 
 SOURCES += main.cpp \
-    memoriafisica.cpp \
     memoriavirtual.cpp \
     paginas.cpp \
     mainwindow.cpp \
     dialog.cpp \
-    lista.inl
+    lista.inl \
+    memoriafisica.cpp
 
 HEADERS += \
-    memoriafisica.h \
     memoriavirtual.h \
     paginas.h \
     mainwindow.h \
     dialog.h \
-    lista.h
+    lista.h \
+    memoriafisica.h
 
 FORMS += \
-    dialog.ui
+    dialog.ui \
+    mainwindow.ui
 

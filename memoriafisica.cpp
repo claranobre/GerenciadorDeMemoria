@@ -1,4 +1,8 @@
 #include "memoriafisica.h"
+
+memoriaFisica::memoriaFisica()
+{
+#include "memoriafisica.h"
 #include "time.h"
 
 memoriaFisica::memoriaFisica()
@@ -89,3 +93,6 @@ int main () {
     printf("Tempo em segundos: %f", tempoGasto);
     return 0;
 }
+
+}
+
