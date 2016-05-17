@@ -1,4 +1,5 @@
 #include "memoriafisica.h"
+#include "time.h"
 
 memoriaFisica::memoriaFisica()
 {
@@ -46,6 +47,13 @@ char memoriaFisica::getMem(int id)
 
 memoriaFisica::Buscar(string endereco)
 {
+
+//...
+int main () {
+   clock_t tempoInicial, tempoFinal;
+   double tempoGasto;
+   tempoInicial = clock();
+
     File *temp;
     for(int i = 0; i< info.Size(); i++){
         info.GetElem(i,temp);
@@ -61,7 +69,7 @@ memoriaFisica::Buscar(string endereco)
             for(int j = 0; j<PaginasNecessarias; j++){
                itoa(temp->getCluster(j), tam, 10);
                if(j == 0)
-                   html.push_back(tam);
+                   push_back(tam);
                else{
                    push_back(", ");
                    push_back(tam);
@@ -76,4 +84,8 @@ memoriaFisica::Buscar(string endereco)
             }
         }
     }
+    tempoFinal = clock();
+    tempoGasto = (tempoFinal-tempoInicial)/CLOCKS_PER_SEC);
+    printf("Tempo em segundos: %f", tempoGasto);
+    return 0;
 }
