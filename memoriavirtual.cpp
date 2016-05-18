@@ -25,7 +25,7 @@ memoriaVirtual::~memoriaVirtual()
     delete memoriaVirtual;
 }
 
-int memoriaVirtual::Excluir(string nome)
+memoriaVirtual::Excluir(string nome)
 {
     File *temp;
     for(int i = 0; i< info.Size(); i++){
